@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadpress Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;700&display=swap" rel="stylesheet">
+    <script defer src="https://kit.fontawesome.com/4e10cb68be.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script defer src="./js/index.js"></script>
+</head>
+<body>
+    <header class="showcase">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">LeadPress</a>
+                    <button class="navbar-toggler" type="button" id="toggle" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                            <a class="nav-link" href="/how_it_works.html">How it works</a>
+                            <a class="nav-link" href="/pricing.html">Pricing</a>
+                            <a class="nav-link" href="/contact.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        </div>
+    </header>
+    <main>
+        <div class="contact-above-fold">
+            <div class="contact-hero">
+                <h1>Contact</h1>
+                <h2>The next step in growing your recruitment agency</h2>
+            </div>
+        </div>
+        <div class="contact-area">
+            <div class="contact-left">
+                <div class="contact-option">
+                    <h3>General enquiries:</h3>
+                    <div class="contact-icons">
+                        <i class="far fa-envelope-open"></i>
+                        <p>hello@leadpress.co.uk</p>
+                    </div>
+                </div>
+                <div class="contact-option">
+                    <h3>Follow our journey:</h3>
+                    <div class="contact-icons">
+                        <i class="fab fa-linkedin"></i>
+                        <p>@LeadpressUK</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="">
+                    <h4>Arrange a callback</h4>
+                <input type="text" id="fname" name="fname" placeholder="Name" required><br>
+                <input type="email" id="email" name="email"  placeholder="Email" ><br>
+                <input type="tel" id="phone" name="phone" placeholder="Phone"><br>
+                <input type="text" id="bname" name="bname" placeholder="Company Name">
+                <p>Select a package:</p>
+                <select name="package" id="package">
+                <option value="starter">Starter</option>
+                <option value="pro">Pro</option>
+                <option value="Agency">Agency</option>
+                </select>
+                <p>Select your job sectors:</p>
+                <div class="select-sector">
+                    <div class="sectors">
+                        <input type="checkbox" id="finance" name="finance" value="finance">
+                        <label for="finance">Finance</label>
+                    </div>
+                    <div class="sectors">
+                        <input type="checkbox" id="healthcare" name="healthcare" value="healthcare">
+                        <label for="healthcare">Healthcare</label>
+                    </div>
+                    <div class="sectors">
+                        <input type="checkbox" id="office" name="office" value="office">
+                        <label for="office">Office & Administration</label>
+                    </div>
+                    <div class="sectors">
+                        <input type="checkbox" id="tech" name="tech" value="tech">
+                        <label for="tech">IT & Tech</label>
+                    </div>
+                    <div class="sectors">
+                        <input type="checkbox" id="marketing" name="marketing" value="marketing">
+                        <label for="marketing">Marketing</label>
+                    </div>
+                    <div class="sectors">
+                        <input type="checkbox" id="insurance" name="insurance" value="insurance">
+                        <label for="insurance">Insurance</label>
+                    </div>
+                    <div class="sectors">
+                        <input type="checkbox" id="energy" name="energy" value="energy">
+                        <label for="energy">Energy</label>
+                    </div>
+                    <div class="sectors">
+                        <input type="checkbox" id="contruction" name="contruction" value="contruction">
+                        <label for="contruction">Contruction</label>
+                    </div>
+                    <div class="sectors">
+                        <input type="checkbox" id="hospitality" name="hospitality" value="hospitality">
+                        <label for="hospitality">Hospitality</label>
+                    </div>
+                    <div class="sectors">
+                        <input type="checkbox" id="other" name="other" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+                <p>When's good to chat:</p>
+                <label for="callback-date"></label>
+                <input type="date" id="callback-date" name="date"> 
+                <p>Additional Info:</p>
+                <textarea name="message" rows="8" cols="30">
+                </textarea>
+                <input class="submit" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-contact">
+            <h6>Contact</h6>
+            <div class="contact-info">
+                <i class="far fa-envelope"></i>
+                <a href="#">hello@leadpress.co.uk</a>
+            </div>
+            <div class="contact-info">
+                <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/benjamincotta/" target="_blank">@LeadpressUK</a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <h6>Links</h6>
+            <a href="/how_it_works.html">How it works</a>
+            <a href="/pricing.html">Pricing</a>
+            <a href="/contact.html">Contact</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+    <div class="footer-sig">
+        <p>Created by <a href="#">Cotta Digital</a> 2021</p>
+    </div>
+</body>
+</html>

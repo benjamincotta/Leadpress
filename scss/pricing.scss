@@ -1,0 +1,348 @@
+@import 'config';
+@import 'utilities';
+@import 'buttons';
+@import 'header';
+@import 'footer';
+
+.showcase {
+  background-color: $primary-color;
+  height: auto;
+  transition: 0.3s;
+}
+
+.pricing-above-fold {
+  padding: 10em 0 0 0;
+  height: 70vh;
+  background-color: $primary-color;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  color: $font-color-secondary;
+
+  .pricing-hero {
+    padding: 0 30px;
+    margin: 0 90px;
+    color: #fff;
+
+    i {
+      font-size: 2em;
+      position: absolute;
+      left: 50%;
+      top: 80%;
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 4em;
+      font-weight: 700;
+      margin: 0;
+      font-family: $font-stack-2;
+    }
+
+    h2 {
+      font-size: 1.6em;
+      line-height: 1.5em;
+      margin: 0;
+      margin-top: 0.5em;
+      font-weight: 400;
+
+      span {
+        color: $secondary-color;
+      }
+    }
+    h2:last-child {
+      margin-top: 0.2em;
+    }
+  }
+}
+
+.pricing-feats {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  margin: 8em 90px 8em 90px;
+
+  .feats-left {
+    flex-basis: 50%;
+
+    h3 {
+      font-weight: 700;
+      font-size: 2em;
+      font-family: $font-stack-2;
+    }
+
+    p {
+      font-size: 1.2em;
+      font-weight: 300;
+      margin-top: 1em;
+      max-width: 20em;
+      font-family: $font-stack-2;
+    }
+    button.btn-primary {
+      margin-top: 2em;
+      font-weight: 700;
+      border: 2px solid (lighten($primary-color, 10%));
+    }
+  }
+
+  .feats-right {
+    display: flex;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .feature-block {
+      display: flex;
+      justify-content: center;
+      max-width: 50%;
+
+      &:nth-child(3) {
+        margin-top: 2em;
+      }
+      &:nth-child(4) {
+        margin-top: 2em;
+      }
+
+      .block-info {
+        padding: 0.5em;
+
+        i {
+          font-size: 1.8em;
+          margin: 0;
+        }
+        h4 {
+          font-size: 1.5em;
+          font-weight: 700;
+          margin-bottom: 0.5em;
+        }
+        p {
+          font-size: 1.1em;
+          margin-bottom: 0;
+          font-family: $font-stack-2;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
+.price-plans {
+  color: $font-color-secondary;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    font-size: 4em;
+    font-weight: 800;
+    font-family: $font-stack-2;
+  }
+
+  .pricing-container {
+    margin: 2em 2.5em;
+    display: flex;
+    justify-content: center;
+    // flex-wrap: wrap;
+
+    .pricing-box {
+      // flex-basis: 28%;
+      padding: 2.5em 4.5em;
+      margin: 0.8em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 3px 7px 3px rgba(0, 0, 0, 0.33);
+      border-radius: 10px;
+    }
+
+    h3 {
+      font-weight: 600;
+      margin: 0;
+    }
+    .amount {
+      margin: 0.3em 0 0 0;
+      font-size: 3em;
+      font-weight: 800;
+      font-family: $font-stack-2;
+      color: $primary-color;
+    }
+    .per-month {
+      color: $primary-color;
+      font-size: 1.5em;
+      position: relative;
+      top: -25px;
+      margin: 0;
+    }
+    hr {
+      height: 1px;
+      color: $font-color-secondary;
+      width: 100%;
+    }
+    .features {
+      margin: 1em 0 0 0;
+      font-size: 1.2em;
+      font-family: $font-stack-2;
+      text-align: center;
+
+      span {
+        color: $secondary-color;
+      }
+    }
+
+    .top-feat {
+      color: $primary-color;
+    }
+
+    .btn-primary {
+      margin: 4em 0 2em 0;
+      font-size: 1.3em;
+      border: 2px solid (lighten($primary-color, 10%));
+      background-color: (lighten($primary-color, 10%));
+      box-shadow: 0px 3px 7px 3px rgba(0, 0, 0, 0.12);
+    }
+    .btn-primary:hover {
+      color: $primary-color;
+      background-color: #fff;
+    }
+  }
+}
+
+.pricing-banner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4em;
+  width: 100%;
+}
+
+.pricing-banner-image {
+  display: flex;
+  flex-basis: 49.5%;
+  height: auto;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.pricing-banner-info {
+  background-color: $light-grey-color;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: $font-color-secondary;
+  flex-basis: 49.5%;
+  padding: 1em 6em;
+
+  h5 {
+    color: $primary-color;
+    text-transform: uppercase;
+    margin-top: 2em;
+  }
+
+  h4 {
+    font-size: 2.4em;
+  }
+
+  p {
+    margin-top: 0.5em;
+    font-size: 1.2em;
+    font-family: $font-stack-2;
+    font-weight: 300;
+  }
+
+  a.btn-primary {
+    margin-bottom: 1em;
+  }
+
+  a.btn-primary:hover {
+    background-color: $secondary-color;
+    color: #fff;
+  }
+}
+
+.pricing-includes {
+  width: 100%;
+  color: $font-color-secondary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4em;
+
+  &-cards {
+    margin-top: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h3 {
+    font-size: 3em;
+    margin: 2em 0 1em 0;
+    font-weight: 700;
+    font-family: $font-stack-2;
+  }
+}
+
+.results-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: left;
+
+  .card-contents {
+    @include card-style;
+    flex-basis: 26%;
+    box-shadow: 0px 3px 7px 3px rgba(0, 0, 0, 0.33);
+
+    i {
+      font-size: 2.5em;
+      margin-bottom: 0.9em;
+      color: $primary-color;
+    }
+
+    h6 {
+      font-size: 1.4em;
+      font-weight: 700;
+      margin-bottom: 0.6em;
+      color: $font-color-secondary;
+    }
+
+    p {
+      text-align: left;
+      color: $font-color-secondary;
+    }
+  }
+}
+
+.get-in-touch {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  height: 40vh;
+  background: rgb(21, 115, 207);
+  background: linear-gradient(
+    90deg,
+    rgba(21, 115, 207, 1) 24%,
+    rgba(21, 115, 207, 0.7721463585434174) 67%
+  );
+  #get_inTouch {
+    display: flex;
+  }
+  h3 {
+    font-size: 2.2em;
+    margin: 0;
+  }
+  h3:last-child {
+    margin-left: 0.2em;
+  }
+}
+
+@import 'pricing-mobile';

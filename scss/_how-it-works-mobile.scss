@@ -1,0 +1,199 @@
+@media (max-width: 768px) {
+  .showcase {
+    .nav-link {
+      margin: 1em 0;
+
+      &:first-child {
+        margin-top: 2em;
+      }
+    }
+  }
+
+  .hiw-above-fold {
+    padding: 4em 0;
+  }
+
+  main .hiw-hero {
+    margin: 4em 0;
+  }
+
+  .hiw-section {
+    margin: 4em 0 !important;
+    text-align: center;
+
+    h4 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+
+    .hiw-explainer {
+      flex-direction: column;
+      flex-wrap: wrap;
+      flex-basis: 0;
+
+      .explainer-top {
+        h5 {
+          margin: 1em 0 0 0;
+        }
+      }
+    }
+
+    .explainer-bottom {
+      margin-top: 3em;
+    }
+    .explainer-bottom-content {
+      margin: 4em 2em 2em 2em;
+      text-align: left;
+
+      .e_b_c_left {
+        flex-basis: 50%;
+      }
+
+      .e_b_c_img {
+        width: 50%;
+      }
+    }
+  }
+  .get-in-touch {
+    h3 {
+      font-size: 1.4em;
+    }
+    .contact-btn {
+      font-size: 1em;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .hiw-above-fold {
+    padding: 4em 0;
+
+    .hiw-hero {
+      margin: 2em 0;
+
+      h1 {
+        font-size: 3em !important;
+      }
+      h2 {
+        font-size: 1.4em !important;
+      }
+    }
+  }
+
+  .hiw-section {
+    h4 {
+      font-size: 1.4em;
+      margin: 0 1em;
+    }
+
+    .hiw-explainer {
+      .explainer-top {
+        margin: 0;
+
+        h5 {
+          font-size: 1.3em;
+          margin: 1em 0.8em;
+        }
+        p {
+          font-size: 1.2em;
+          line-height: 1.1em;
+        }
+      }
+    }
+    .explainer-bottom {
+      h4 {
+        font-size: 1.4em;
+        margin: 0 1em;
+      }
+    }
+    .explainer-bottom-content {
+      flex-direction: column;
+
+      .e_b_c_img {
+        justify-content: center;
+        width: 100%;
+        margin-top: 1em;
+      }
+    }
+  }
+
+  .get-in-touch {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 1em;
+    height: 40vh;
+
+    h3 {
+      padding: 0 1.2em;
+      line-height: 1.5em;
+    }
+
+    a {
+      margin: 0em 1.2em 0 1.2em;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  h3 {
+    margin: 0 2em;
+    font-size: 0.8em;
+  }
+
+  .hiw-section {
+    h3 {
+      font-size: 0.8em;
+    }
+    h4 {
+      font-size: 1.3em;
+      margin: 0 1.2em;
+    }
+
+    .hiw-explainer {
+      .explainer-top {
+        h5 {
+          font-size: 1.2em;
+          margin: 0.8em;
+        }
+        p {
+          font-size: 1em;
+          line-height: 1.2em;
+        }
+      }
+    }
+    .explainer-bottom {
+      h4 {
+        font-size: 1.2em;
+        margin: 0 1em;
+      }
+    }
+    .explainer-bottom-content {
+      flex-direction: column;
+
+      .e_b_c_left {
+        h5 {
+          font-size: 1.18em;
+        }
+        p {
+          font-size: 1em;
+          font-family: $font-stack-2;
+        }
+      }
+
+      .e_b_c_img {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .get-in-touch {
+    padding: 0;
+
+    h3 {
+      margin-top: 0.5em;
+    }
+  }
+}

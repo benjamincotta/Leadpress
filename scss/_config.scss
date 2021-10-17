@@ -1,0 +1,30 @@
+$light-color: rgb(244, 244, 244);
+$primary-color: hsl(210, 82%, 45%);
+$secondary-color: rgb(255, 136, 0);
+$grey-color: #f4f4f4;
+$font-color-secondary: rgb(51, 51, 51);
+$background-color: rgb(186, 178, 169);
+// $font-stack: Arial, Helvetica, sans-serif;
+$font-stack: 'Dosis', sans-serif;
+$font-stack-2: 'Roboto', sans-serif;
+$footer-color: hsl(195, 9%, 18%);
+$light-grey-color: hsl(195, 9%, 90%);
+
+body {
+  // background-color: $grey-color;
+  font-family: $font-stack;
+  line-height: 1.6;
+  color: $grey-color;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  // outline: 1px red solid !important;
+  // visibility: visible !important;
+}

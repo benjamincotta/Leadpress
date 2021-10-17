@@ -1,0 +1,212 @@
+@media (max-width: 1024px) {
+  .showcase {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 922px) {
+  .showcase {
+    height: 75vh;
+  }
+
+  .newHeight {
+    height: 95vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .showcase {
+    height: 76vh;
+
+    .nav-link {
+      margin: 1em 0;
+
+      &:first-child {
+        margin-top: 2em;
+      }
+    }
+  }
+  .main-wrapper {
+    h2 {
+      font-size: 1.5em;
+      padding: 0 1em;
+      margin-top: 0;
+    }
+    .info-cards {
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+  .two-cols,
+  .two-cols-reverse {
+    img {
+      width: 20em;
+    }
+
+    &-text {
+      flex-basis: 50%;
+    }
+  }
+  .results-cards .card-contents {
+    flex-basis: 44%;
+    min-height: 22em;
+  }
+  .get-in-touch {
+    h3 {
+      font-size: 1.4em;
+    }
+    .contact-btn {
+      font-size: 1em;
+    }
+  }
+
+  .newHeight {
+    height: 124vh;
+  }
+}
+
+@media (max-width: 766px) {
+  .showcase {
+    height: 85vh;
+  }
+
+  .newHeight {
+    height: 135vh;
+  }
+}
+
+@media (max-width: 700px) {
+  .showcase-content {
+    margin-top: 3em;
+
+    h1 {
+      font-size: 2.2em;
+    }
+
+    img {
+      display: none;
+    }
+  }
+  .two-cols,
+  .two-cols-reverse {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 425px) {
+  .newHeight {
+    height: 124vh;
+  }
+
+  .about {
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .two-cols,
+  .two-cols-reverse {
+    flex-direction: column;
+    align-items: center;
+
+    h4 {
+      font-size: 0.8em;
+    }
+    h5 {
+      font-size: 1.4em;
+    }
+  }
+  .results {
+    text-align: left;
+    padding: 2em;
+    align-items: baseline;
+  }
+  .results-cards .card-contents {
+    flex-basis: 100%;
+    margin: 0 0 1.2em 0;
+    min-height: 0;
+  }
+  .get-in-touch {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 1em;
+    height: 40vh;
+
+    h3 {
+      padding: 0 1.2em;
+      line-height: 1.5em;
+    }
+
+    a {
+      margin: 0em 1.2em 0 1.2em;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .showcase {
+    height: 63vh;
+
+    &-content {
+      margin-top: 1em;
+
+      h1 {
+        font-size: 1.7em;
+        text-align: left;
+      }
+
+      p {
+        font-size: 1em;
+        text-align: left;
+      }
+    }
+    %btn {
+      width: 174px;
+    }
+  }
+
+  .about {
+    padding: 3em 2em;
+    h3 {
+      margin-top: 0em;
+    }
+  }
+
+  .two-cols.img {
+    padding: 1.2em;
+  }
+  .two-cols-image {
+    padding: 1.2em;
+  }
+
+  .newHeight {
+    height: 113vh;
+  }
+}
+
+@media (max-width: 320px) {
+  .showcase {
+    height: 70vh;
+  }
+  a.btn-secondary {
+    margin-top: 2em;
+  }
+  .two-cols,
+  .two-cols-reverse {
+    img {
+      width: 16em;
+    }
+  }
+  .newHeight {
+    height: 120vh;
+  }
+
+  .get-in-touch {
+    padding: 0;
+
+    h3 {
+      margin-top: 0.5em;
+    }
+  }
+}

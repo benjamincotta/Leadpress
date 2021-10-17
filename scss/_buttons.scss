@@ -1,0 +1,53 @@
+%btn {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 8px 20px;
+  margin-top: 1em;
+  margin-right: 0.5em;
+  width: 150px;
+  text-align: center;
+  color: $light-color;
+  font-size: 1.1em;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(0.98);
+  }
+}
+
+.btn-primary {
+  @extend %btn;
+  background-color: (lighten($primary-color, 10%));
+  background-color: (lighten($primary-color, 10%));
+
+  &:hover {
+    background-color: $light-color;
+    color: $primary-color;
+  }
+}
+
+.btn-secondary {
+  @extend %btn;
+  background-color: $secondary-color;
+
+  &:hover {
+    background-color: $light-color;
+    color: $primary-color;
+  }
+}
+
+.contact-btn {
+  @extend %btn;
+  color: #fff;
+  font-size: 1.2em;
+  margin: 0;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  transition: 0.2s ease;
+
+  &:hover {
+    background-color: $light-color;
+    color: $primary-color;
+  }
+}
