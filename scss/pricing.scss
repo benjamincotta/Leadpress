@@ -11,9 +11,31 @@
 }
 
 .pricing-above-fold {
+  position: relative;
   padding: 10em 0 0 0;
   height: 70vh;
   background-color: $primary-color;
+
+  .custom-shape-divider-bottom-1635362482 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .custom-shape-divider-bottom-1635362482 svg {
+    position: relative;
+    display: block;
+    width: calc(141% + 1.3px);
+    height: 102px;
+  }
+
+  .custom-shape-divider-bottom-1635362482 .shape-fill {
+    fill: #ffffff;
+  }
 }
 
 main {
@@ -25,14 +47,6 @@ main {
     padding: 0 30px;
     margin: 0 90px;
     color: #fff;
-
-    i {
-      font-size: 2em;
-      position: absolute;
-      left: 50%;
-      top: 80%;
-      color: #fff;
-    }
 
     h1 {
       font-size: 4em;

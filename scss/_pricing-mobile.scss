@@ -70,6 +70,14 @@
   }
 }
 
+@media (max-width: 752px) {
+  .price-plans {
+    .pricing-container {
+      flex-direction: column;
+    }
+  }
+}
+
 @media (max-width: 425px) {
   .pricing-above-fold {
     padding: 4em 0;

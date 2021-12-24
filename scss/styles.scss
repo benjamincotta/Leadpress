@@ -3,7 +3,6 @@
 @import 'buttons';
 @import 'header';
 @import 'footer';
-@import 'animations';
 
 .showcase {
   background-color: $primary-color;
@@ -11,6 +10,7 @@
   transition: 0.3s;
 
   &-content {
+    // position: relative;
     margin-top: 1em;
     height: 100%;
     display: flex;
